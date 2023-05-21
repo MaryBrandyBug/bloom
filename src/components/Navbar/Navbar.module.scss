@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+
+  .logo {
+    font-family: 'Sacramento', cursive;
+    // font-family: 'La Belle Aurore', cursive;
+    font-size: 60px;
+
+    transform: rotate(-5deg);
+  }
+
+  .menu__container {
+    display: flex;
+    align-items: center;
+
+    .menu__item {
+      margin-left: 32px;
+
+      a {
+        font-family: 'Lato', sans-serif;
+      }
+    }
+  }
+}
