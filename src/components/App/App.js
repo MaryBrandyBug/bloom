@@ -1,4 +1,5 @@
 import Header from '../Header';
+import Main from '../Main';
 import Tagline from '../Tagline';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <Tagline />
+      <Main />
     </div>
   );
 }
