@@ -1,15 +1,18 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Main.module.scss';
-import Carousel from '../Carousel';
 
-import data from './data';
+import Carousel from '../Carousel';
+import InsertText from '../InsertText';
+
+import { companiesLogosPaths, arrowWithFlyPath, welcomeText } from './data';
 
 export default function Main() {
   const cx = classNames.bind(styles);
   return (
-    <div className={cx('container')}>
-      <Carousel imgPath={data} />
-    </div>
+    <section className={cx('container')}>
+      <Carousel imgPath={companiesLogosPaths} />
+      <InsertText imgPath={arrowWithFlyPath} textArr={welcomeText} />
+    </section>
   );
 }
